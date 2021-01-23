@@ -435,7 +435,7 @@
               "columns": [
                 {
                   "name": "DateKey",
-                  "translatedCaption": "DateKey"
+                  "translatedCaption": "Datum ID"
                 },
                 {
                   "name": "Date",
@@ -493,7 +493,7 @@
               "columns": [
                 {
                   "name": "ProductKey",
-                  "translatedCaption": "Produkt Schlüssel"
+                  "translatedCaption": "Produkt ID"
                 },
                 {
                   "name": "SKU",
@@ -505,7 +505,7 @@
                 },
                 {
                   "name": "Standard Cost",
-                  "translatedCaption": "Standard Cost"
+                  "translatedCaption": "Kosten"
                 },
                 {
                   "name": "Color",
@@ -513,11 +513,11 @@
                 },
                 {
                   "name": "List Price",
-                  "translatedCaption": "List Price"
+                  "translatedCaption": "Listenreis"
                 },
                 {
                   "name": "Model",
-                  "translatedCaption": "Model"
+                  "translatedCaption": "Modell"
                 },
                 {
                   "name": "Subcategory",
@@ -547,7 +547,7 @@
                     },
                     {
                       "name": "Model",
-                      "translatedCaption": "Model"
+                      "translatedCaption": "Modell"
                     },
                     {
                       "name": "Product",
@@ -563,7 +563,7 @@
               "columns": [
                 {
                   "name": "ResellerKey",
-                  "translatedCaption": "Verkäufer Nr"
+                  "translatedCaption": "Verkäufer ID"
                 },
                 {
                   "name": "Reseller ID",
@@ -633,7 +633,7 @@
                 },
                 {
                   "name": "ResellerKey",
-                  "translatedCaption": "Verkäufer Nr"
+                  "translatedCaption": "Verkäufer ID"
                 },
                 {
                   "name": "CustomerKey",
@@ -657,11 +657,11 @@
                 },
                 {
                   "name": "SalesTerritoryKey",
-                  "translatedCaption": "SalesTerritoryKey"
+                  "translatedCaption": "Verkaufsgegiet ID"
                 },
                 {
                   "name": "Order Quantity",
-                  "translatedCaption": "Order Quantity"
+                  "translatedCaption": "Bestellmenge"
                 },
                 {
                   "name": "Unit Price",
@@ -669,65 +669,65 @@
                 },
                 {
                   "name": "Extended Amount",
-                  "translatedCaption": "Extended Amount"
+                  "translatedCaption": "Rabatt"
                 },
                 {
                   "name": "Unit Price Discount Pct",
-                  "translatedCaption": "Unit Price Discount Pct"
+                  "translatedCaption": "Rabatt pro Stück %"
                 },
                 {
                   "name": "Product Standard Cost",
-                  "translatedCaption": "Product Standard Cost"
+                  "translatedCaption": "Standardkosten"
                 },
                 {
                   "name": "Total Product Cost",
-                  "translatedCaption": "Total Product Cost"
+                  "translatedCaption": "Komplettkosten"
                 },
                 {
                   "name": "Sales Amount",
-                  "translatedCaption": "Sales Amount"
+                  "translatedCaption": "Umsatz"
                 }
               ],
               "measures": [
                 {
                   "name": "Sales Amount by Due Date",
-                  "translatedCaption": "Sales Amount by Due Date"
+                  "translatedCaption": "Umsatz Bestelldatum"
                 }
               ]
             },
             {
               "name": "Sales Order",
-              "translatedCaption": "Sales Order",
+              "translatedCaption": "Bestellungen",
               "columns": [
                 {
                   "name": "Channel",
-                  "translatedCaption": "Channel"
+                  "translatedCaption": "Kanal"
                 },
                 {
                   "name": "SalesOrderLineKey",
-                  "translatedCaption": "SalesOrderLineKey"
+                  "translatedCaption": "Limien ID"
                 },
                 {
                   "name": "Sales Order",
-                  "translatedCaption": "Sales Order"
+                  "translatedCaption": "Bestellung"
                 },
                 {
                   "name": "Sales Order Line",
-                  "translatedCaption": "Sales Order Line"
+                  "translatedCaption": "Linie"
                 }
               ],
               "hierarchies": [
                 {
                   "name": "Sales Orders",
-                  "translatedCaption": "Sales Orders",
+                  "translatedCaption": "Bestellungen",
                   "levels": [
                     {
                       "name": "Sales Order",
-                      "translatedCaption": "Sales Order"
+                      "translatedCaption": "Bestellung"
                     },
                     {
                       "name": "Sales Order Line",
-                      "translatedCaption": "Sales Order Line"
+                      "translatedCaption": "Linie"
                     }
                   ]
                 }
@@ -735,11 +735,11 @@
             },
             {
               "name": "Sales Territory",
-              "translatedCaption": "Sales Territory",
+              "translatedCaption": "Gebiet",
               "columns": [
                 {
                   "name": "SalesTerritoryKey",
-                  "translatedCaption": "SalesTerritoryKey"
+                  "translatedCaption": "Verkaufsgegiet ID"
                 },
                 {
                   "name": "Region",
