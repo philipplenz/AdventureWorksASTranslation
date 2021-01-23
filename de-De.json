@@ -1,0 +1,797 @@
+{
+  "ReferenceCulture": {
+    "name": "79ddfd25-c4d1-4d1b-8275-61b0a9e708dc",
+    "id": "79ddfd25-c4d1-4d1b-8275-61b0a9e708dc",
+    "model": {
+      "name": "Model",
+      "tables": [
+        {
+          "name": "Customer",
+          "columns": [
+            {
+              "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61"
+            },
+            {
+              "name": "CustomerKey"
+            },
+            {
+              "name": "Customer ID"
+            },
+            {
+              "name": "Customer"
+            },
+            {
+              "name": "City"
+            },
+            {
+              "name": "State-Province"
+            },
+            {
+              "name": "Country-Region"
+            },
+            {
+              "name": "Postal Code"
+            }
+          ],
+          "hierarchies": [
+            {
+              "name": "Geography",
+              "levels": [
+                {
+                  "name": "Country-Region"
+                },
+                {
+                  "name": "State-Province"
+                },
+                {
+                  "name": "City"
+                },
+                {
+                  "name": "Postal Code"
+                },
+                {
+                  "name": "Customer"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Date",
+          "columns": [
+            {
+              "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61"
+            },
+            {
+              "name": "DateKey"
+            },
+            {
+              "name": "Date"
+            },
+            {
+              "name": "Fiscal Year"
+            },
+            {
+              "name": "Fiscal Quarter"
+            },
+            {
+              "name": "Month"
+            },
+            {
+              "name": "Full Date"
+            },
+            {
+              "name": "MonthKey"
+            }
+          ],
+          "hierarchies": [
+            {
+              "name": "Fiscal",
+              "levels": [
+                {
+                  "name": "Year"
+                },
+                {
+                  "name": "Quarter"
+                },
+                {
+                  "name": "Month"
+                },
+                {
+                  "name": "Date"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Product",
+          "columns": [
+            {
+              "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61"
+            },
+            {
+              "name": "ProductKey"
+            },
+            {
+              "name": "SKU"
+            },
+            {
+              "name": "Product"
+            },
+            {
+              "name": "Standard Cost"
+            },
+            {
+              "name": "Color"
+            },
+            {
+              "name": "List Price"
+            },
+            {
+              "name": "Model"
+            },
+            {
+              "name": "Subcategory"
+            },
+            {
+              "name": "Category"
+            },
+            {
+              "name": "Sorting"
+            }
+          ],
+          "hierarchies": [
+            {
+              "name": "Products",
+              "levels": [
+                {
+                  "name": "Category"
+                },
+                {
+                  "name": "Subcategory"
+                },
+                {
+                  "name": "Model"
+                },
+                {
+                  "name": "Product"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Reseller",
+          "columns": [
+            {
+              "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61"
+            },
+            {
+              "name": "ResellerKey"
+            },
+            {
+              "name": "Reseller ID"
+            },
+            {
+              "name": "Business Type"
+            },
+            {
+              "name": "Reseller"
+            },
+            {
+              "name": "City"
+            },
+            {
+              "name": "State-Province"
+            },
+            {
+              "name": "Country-Region"
+            },
+            {
+              "name": "Postal Code"
+            }
+          ],
+          "hierarchies": [
+            {
+              "name": "Geography",
+              "levels": [
+                {
+                  "name": "Country-Region"
+                },
+                {
+                  "name": "State-Province"
+                },
+                {
+                  "name": "City"
+                },
+                {
+                  "name": "Postal Code"
+                },
+                {
+                  "name": "Reseller"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Sales",
+          "columns": [
+            {
+              "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61"
+            },
+            {
+              "name": "SalesOrderLineKey"
+            },
+            {
+              "name": "ResellerKey"
+            },
+            {
+              "name": "CustomerKey"
+            },
+            {
+              "name": "ProductKey"
+            },
+            {
+              "name": "OrderDateKey"
+            },
+            {
+              "name": "DueDateKey"
+            },
+            {
+              "name": "ShipDateKey"
+            },
+            {
+              "name": "SalesTerritoryKey"
+            },
+            {
+              "name": "Order Quantity"
+            },
+            {
+              "name": "Unit Price"
+            },
+            {
+              "name": "Extended Amount"
+            },
+            {
+              "name": "Unit Price Discount Pct"
+            },
+            {
+              "name": "Product Standard Cost"
+            },
+            {
+              "name": "Total Product Cost"
+            },
+            {
+              "name": "Sales Amount"
+            }
+          ],
+          "measures": [
+            {
+              "name": "Sales Amount by Due Date"
+            }
+          ]
+        },
+        {
+          "name": "Sales Order",
+          "columns": [
+            {
+              "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61"
+            },
+            {
+              "name": "Channel"
+            },
+            {
+              "name": "SalesOrderLineKey"
+            },
+            {
+              "name": "Sales Order"
+            },
+            {
+              "name": "Sales Order Line"
+            }
+          ],
+          "hierarchies": [
+            {
+              "name": "Sales Orders",
+              "levels": [
+                {
+                  "name": "Sales Order"
+                },
+                {
+                  "name": "Sales Order Line"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Sales Territory",
+          "columns": [
+            {
+              "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61"
+            },
+            {
+              "name": "SalesTerritoryKey"
+            },
+            {
+              "name": "Region"
+            },
+            {
+              "name": "Country"
+            },
+            {
+              "name": "Group"
+            }
+          ],
+          "hierarchies": [
+            {
+              "name": "Sales Territories",
+              "levels": [
+                {
+                  "name": "Group"
+                },
+                {
+                  "name": "Country"
+                },
+                {
+                  "name": "Region"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Table",
+          "columns": [
+            {
+              "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61"
+            },
+            {
+              "name": "Category"
+            },
+            {
+              "name": "Sorting"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "cultures": [
+    {
+      "name": "de-DE",
+      "translations": {
+        "model": {
+          "name": "Model",
+          "translatedCaption": "Model",
+          "tables": [
+            {
+              "name": "Customer",
+              "translatedCaption": "Kunde",
+              "columns": [
+                {
+                  "name": "CustomerKey",
+                  "translatedCaption": "Kunden Nr."
+                },
+                {
+                  "name": "Customer ID",
+                  "translatedCaption": "Kunden ID"
+                },
+                {
+                  "name": "Customer",
+                  "translatedCaption": "Kunde"
+                },
+                {
+                  "name": "City",
+                  "translatedCaption": "Stadt"
+                },
+                {
+                  "name": "State-Province",
+                  "translatedCaption": "Landkreis"
+                },
+                {
+                  "name": "Country-Region",
+                  "translatedCaption": "Bundesland"
+                },
+                {
+                  "name": "Postal Code",
+                  "translatedCaption": "Postleitzahl"
+                }
+              ],
+              "hierarchies": [
+                {
+                  "name": "Geography",
+                  "translatedCaption": "Gebiet",
+                  "levels": [
+                    {
+                      "name": "Country-Region",
+                      "translatedCaption": "Bundesland"
+                    },
+                    {
+                      "name": "State-Province",
+                      "translatedCaption": "Landkreis"
+                    },
+                    {
+                      "name": "City",
+                      "translatedCaption": "Stadt"
+                    },
+                    {
+                      "name": "Postal Code",
+                      "translatedCaption": "Postleitzahl"
+                    },
+                    {
+                      "name": "Customer",
+                      "translatedCaption": "Kunde"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Date",
+              "translatedCaption": "Datum",
+              "columns": [
+                {
+                  "name": "DateKey",
+                  "translatedCaption": "DateKey"
+                },
+                {
+                  "name": "Date",
+                  "translatedCaption": "Datum"
+                },
+                {
+                  "name": "Fiscal Year",
+                  "translatedCaption": "Geschäftsjahr"
+                },
+                {
+                  "name": "Fiscal Quarter",
+                  "translatedCaption": "Geschäftsquartal"
+                },
+                {
+                  "name": "Month",
+                  "translatedCaption": "Monat"
+                },
+                {
+                  "name": "Full Date",
+                  "translatedCaption": "Qualifiziertesdatum"
+                },
+                {
+                  "name": "MonthKey",
+                  "translatedCaption": "Monatsschlüssel"
+                }
+              ],
+              "hierarchies": [
+                {
+                  "name": "Fiscal",
+                  "translatedCaption": "Geschäft",
+                  "levels": [
+                    {
+                      "name": "Year",
+                      "translatedCaption": "'J'ahr"
+                    },
+                    {
+                      "name": "Quarter",
+                      "translatedCaption": "Quartal"
+                    },
+                    {
+                      "name": "Month",
+                      "translatedCaption": "Monat"
+                    },
+                    {
+                      "name": "Date",
+                      "translatedCaption": "Datum"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Product",
+              "translatedCaption": "Produkt",
+              "columns": [
+                {
+                  "name": "ProductKey",
+                  "translatedCaption": "Produkt Schlüssel"
+                },
+                {
+                  "name": "SKU",
+                  "translatedCaption": "SKU"
+                },
+                {
+                  "name": "Product",
+                  "translatedCaption": "Produkt"
+                },
+                {
+                  "name": "Standard Cost",
+                  "translatedCaption": "Standard Cost"
+                },
+                {
+                  "name": "Color",
+                  "translatedCaption": "Farbe"
+                },
+                {
+                  "name": "List Price",
+                  "translatedCaption": "List Price"
+                },
+                {
+                  "name": "Model",
+                  "translatedCaption": "Model"
+                },
+                {
+                  "name": "Subcategory",
+                  "translatedCaption": "Unter-Kategorie"
+                },
+                {
+                  "name": "Category",
+                  "translatedCaption": "Kategorie"
+                },
+                {
+                  "name": "Sorting",
+                  "translatedCaption": "Sortierung"
+                }
+              ],
+              "hierarchies": [
+                {
+                  "name": "Products",
+                  "translatedCaption": "Produkte",
+                  "levels": [
+                    {
+                      "name": "Category",
+                      "translatedCaption": "Kategorie"
+                    },
+                    {
+                      "name": "Subcategory",
+                      "translatedCaption": "Unter-Kategorie"
+                    },
+                    {
+                      "name": "Model",
+                      "translatedCaption": "Model"
+                    },
+                    {
+                      "name": "Product",
+                      "translatedCaption": "Produkt"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Reseller",
+              "translatedCaption": "Verkäufer",
+              "columns": [
+                {
+                  "name": "ResellerKey",
+                  "translatedCaption": "Verkäufer Nr"
+                },
+                {
+                  "name": "Reseller ID",
+                  "translatedCaption": "Vekäufer ID"
+                },
+                {
+                  "name": "Business Type",
+                  "translatedCaption": "Typ"
+                },
+                {
+                  "name": "Reseller",
+                  "translatedCaption": "Verkäufer"
+                },
+                {
+                  "name": "City",
+                  "translatedCaption": "Stadt"
+                },
+                {
+                  "name": "State-Province",
+                  "translatedCaption": "Landkreis"
+                },
+                {
+                  "name": "Country-Region",
+                  "translatedCaption": "Bundesland"
+                },
+                {
+                  "name": "Postal Code",
+                  "translatedCaption": "Postleitzahl"
+                }
+              ],
+              "hierarchies": [
+                {
+                  "name": "Geography",
+                  "translatedCaption": "Gebiet",
+                  "levels": [
+                    {
+                      "name": "Country-Region",
+                      "translatedCaption": "Bundesland"
+                    },
+                    {
+                      "name": "State-Province",
+                      "translatedCaption": "Lqndkreis"
+                    },
+                    {
+                      "name": "City",
+                      "translatedCaption": "Stadt"
+                    },
+                    {
+                      "name": "Postal Code",
+                      "translatedCaption": "Postleitzahl"
+                    },
+                    {
+                      "name": "Reseller",
+                      "translatedCaption": "Verkäufer"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Sales",
+              "translatedCaption": "Umsatz",
+              "columns": [
+                {
+                  "name": "SalesOrderLineKey",
+                  "translatedCaption": "Linie"
+                },
+                {
+                  "name": "ResellerKey",
+                  "translatedCaption": "Verkäufer Nr"
+                },
+                {
+                  "name": "CustomerKey",
+                  "translatedCaption": "Kunden Nr"
+                },
+                {
+                  "name": "ProductKey",
+                  "translatedCaption": "Produkt Nr"
+                },
+                {
+                  "name": "OrderDateKey",
+                  "translatedCaption": "Bestell Datum"
+                },
+                {
+                  "name": "DueDateKey",
+                  "translatedCaption": "Bezahl Datum"
+                },
+                {
+                  "name": "ShipDateKey",
+                  "translatedCaption": "Versand Datum"
+                },
+                {
+                  "name": "SalesTerritoryKey",
+                  "translatedCaption": "SalesTerritoryKey"
+                },
+                {
+                  "name": "Order Quantity",
+                  "translatedCaption": "Order Quantity"
+                },
+                {
+                  "name": "Unit Price",
+                  "translatedCaption": "Einzelpreis"
+                },
+                {
+                  "name": "Extended Amount",
+                  "translatedCaption": "Extended Amount"
+                },
+                {
+                  "name": "Unit Price Discount Pct",
+                  "translatedCaption": "Unit Price Discount Pct"
+                },
+                {
+                  "name": "Product Standard Cost",
+                  "translatedCaption": "Product Standard Cost"
+                },
+                {
+                  "name": "Total Product Cost",
+                  "translatedCaption": "Total Product Cost"
+                },
+                {
+                  "name": "Sales Amount",
+                  "translatedCaption": "Sales Amount"
+                }
+              ],
+              "measures": [
+                {
+                  "name": "Sales Amount by Due Date",
+                  "translatedCaption": "Sales Amount by Due Date"
+                }
+              ]
+            },
+            {
+              "name": "Sales Order",
+              "translatedCaption": "Sales Order",
+              "columns": [
+                {
+                  "name": "Channel",
+                  "translatedCaption": "Channel"
+                },
+                {
+                  "name": "SalesOrderLineKey",
+                  "translatedCaption": "SalesOrderLineKey"
+                },
+                {
+                  "name": "Sales Order",
+                  "translatedCaption": "Sales Order"
+                },
+                {
+                  "name": "Sales Order Line",
+                  "translatedCaption": "Sales Order Line"
+                }
+              ],
+              "hierarchies": [
+                {
+                  "name": "Sales Orders",
+                  "translatedCaption": "Sales Orders",
+                  "levels": [
+                    {
+                      "name": "Sales Order",
+                      "translatedCaption": "Sales Order"
+                    },
+                    {
+                      "name": "Sales Order Line",
+                      "translatedCaption": "Sales Order Line"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Sales Territory",
+              "translatedCaption": "Sales Territory",
+              "columns": [
+                {
+                  "name": "SalesTerritoryKey",
+                  "translatedCaption": "SalesTerritoryKey"
+                },
+                {
+                  "name": "Region",
+                  "translatedCaption": "Region"
+                },
+                {
+                  "name": "Country",
+                  "translatedCaption": "Land"
+                },
+                {
+                  "name": "Group",
+                  "translatedCaption": "Gruppe"
+                }
+              ],
+              "hierarchies": [
+                {
+                  "name": "Sales Territories",
+                  "translatedCaption": "Verkaufsgebiet",
+                  "levels": [
+                    {
+                      "name": "Group",
+                      "translatedCaption": "Gruppe"
+                    },
+                    {
+                      "name": "Country",
+                      "translatedCaption": "Land"
+                    },
+                    {
+                      "name": "Region",
+                      "translatedCaption": "Region"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Table",
+              "translatedCaption": "Tabelle",
+              "columns": [
+                {
+                  "name": "Category",
+                  "translatedCaption": "Kategorie"
+                },
+                {
+                  "name": "Sorting",
+                  "translatedCaption": "Sortierung"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
